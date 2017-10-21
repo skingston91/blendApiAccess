@@ -6,7 +6,6 @@ import {
 
 export function fetchData(apiName, props) {
   return (dispatch, getState, api) => {
-    // console.log(api);
     const selectedAPI = api[apiName];
     dispatch({ type: FETCH_DATA_STARTING, payload: { ...props } });
     return selectedAPI

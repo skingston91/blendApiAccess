@@ -86,5 +86,6 @@ module.exports = {
     contentBase: '/',
     quiet: true,
     disableHostCheck: true, // security risk need to turn this off before prod allows ngrok to work on wildcard
+    port: 4000,
   },
 };
