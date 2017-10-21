@@ -1,0 +1,100 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb"
+//    "plugin:css-modules/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y"
+//    "css-modules"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/sort-comp": [
+      2,
+      {
+        "groups": {
+          "lifecycle": [
+            "displayName",
+            "defaultProps",
+            "propTypes",
+            "contextTypes",
+            "childContextTypes",
+            "mixins",
+            "statics",
+            "constructor",
+            "getDefaultProps",
+            "getInitialState",
+            "state",
+            "getChildContext",
+            "componentWillMount",
+            "componentDidMount",
+            "componentWillReceiveProps",
+            "shouldComponentUpdate",
+            "componentWillUpdate",
+            "componentDidUpdate",
+            "componentWillUnmount"
+          ]
+        }
+      }
+    ],
+    "quote-props": 1,
+    "no-shadow": 0,
+    "consistent-return": 0,
+    "template-curly-spacing": [
+      2,
+      "always"
+    ],
+    "react/jsx-curly-spacing": [
+      2,
+      "always",
+      {
+        "spacing": {
+          "objectLiterals": "never"
+        },
+        "allowMultiline": true
+      }
+    ],
+    "import/no-unresolved": 2,
+    "comma-dangle": [
+      2,
+      "always-multiline"
+    ],
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "no-console": 1,
+    "no-param-reassign": 0,
+    "max-len": 0,
+    "prefer-template": 2,
+    "no-use-before-define": 0,
+    "newline-per-chained-call": 0,
+    "arrow-body-style": [
+      2,
+      "as-needed"
+    ],
+    "jsx-a11y/href-no-hash": 2,
+    "jsx-a11y/label-has-for": 2,
+    "jsx-a11y/mouse-events-have-key-events": 2,
+    "jsx-a11y/role-has-required-aria-props": 2,
+    "jsx-a11y/role-supports-aria-props": 2,
+    "jsx-a11y/aria-props": 2
+  },
+}
