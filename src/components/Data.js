@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import DataContainer from '../containers/DataContainer';
-import SearchResult from './SearchResult';
+import SearchResultsPage from './SearchResultsPage';
 
 const Data = ({ match: { params } }) =>
-  <DataContainer { ...params } render={ SearchResult } />;
+  <DataContainer { ...params } render={ SearchResultsPage } />;
 
 Data.propTypes = {
   match: PropTypes.object,
